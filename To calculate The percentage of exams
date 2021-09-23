@@ -1,0 +1,25 @@
+/* C++ Program to calculate Average of 7 subjects and find percentage  */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+        int mark[7], i;
+        float sum=0;
+        cout<<"\nEnter marks obtained in Science, OPT, Maths, CS, English, Social, Health :: \n";
+        for(i=0; i<7; i++)
+        {
+            cout<<"\nEnter mark[ "<<i+1<<" ] :: ";
+                cin>>mark[i];
+                sum=sum+mark[i];
+        }
+
+        float avg=sum/7;
+        float perc;
+        perc=(sum/500)*100;
+        cout<<"\nAverage Marks of 7 Subjects = [ "<<avg<<" ] \n";
+        cout<<"\nPercentage in 7 Subjects = [ "<<perc<<"% ] \n";
+
+        return 0;
+}
