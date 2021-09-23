@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+        int mark[7], i;
+        float sum=0,avg;
+
+        cout<<"\nEnter Marks in 7 subjects :: \n";
+        for(i=0; i<7; i++)
+        {
+            cout<<"\nEnter Marks[ "<<i+1<<" ] :: ";
+                cin>>mark[i];
+                sum=sum+mark[i];
+        }
+
+        avg=sum/7;
+
+        cout<<"\nYour Grade is :: ";
+        if(avg>90)
+        {
+                cout<<"[ A+ ]\n";
+        }
+        else if(avg>80 && avg<=90)
+        {
+                cout<<"[ A ]\n";
+        }
+        else if (avg>80 && avg<=70)
+        {
+                cout<<"[ B+ ]\n";
+        }
+        else if(avg>60 && avg<=70)
+        {
+                cout<<"[ B ]\n";
+        }
+        else if (avg>60 && avg<=50)
+        {
+                cout<<"[ C ]\n";
+        }
+        else if (avg>50 && avg<=40)
+        {
+                 cout<<"[ C+]\n";
+        }
+        else 
+        {
+                  cout<<"[ D ]\n";
+        }
+        return 0;
+}
